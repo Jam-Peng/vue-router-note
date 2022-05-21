@@ -28,6 +28,28 @@ const routes = [
       {
         path: 'EnBook',
         component: () => import('../views/EnBook.vue')
+      },
+      {
+        path: 'NamedView',
+        component: () => import('../views/NamedView.vue'),
+        children: [
+          {
+            path: 'Art-Design-Shot',
+            components: {
+              left: () => import('../views/ArtBook.vue'),
+              middle: () => import('../views/DesignBook.vue'),
+              right: () => import('../views/StreetShoot.vue')
+            }
+          },
+          {
+            path: 'Shot-Art-Design',
+            components: {
+              left: () => import('../views/StreetShoot.vue'),
+              middle: () => import('../views/ArtBook.vue'),
+              right: () => import('../views/DesignBook.vue')
+            }
+          }
+        ]
       }
     ]
   }
