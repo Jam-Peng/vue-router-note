@@ -19,7 +19,17 @@ const routes = [
   {
     path: '/product',
     name: '新增頁面',
-    component: () => import('../views/productView.vue')
+    component: () => import('../views/productView.vue'),
+    children: [
+      {
+        path: 'ChBook',
+        component: () => import('../views/ChBook.vue')
+      },
+      {
+        path: 'EnBook',
+        component: () => import('../views/EnBook.vue')
+      }
+    ]
   }
 ]
 

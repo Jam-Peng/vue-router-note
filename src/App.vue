@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-light mb-3">
+    <div class="container">
       <a class="navbar-brand" href="#">Navbar</a>
       <button
         class="navbar-toggler"
@@ -34,12 +34,6 @@
     </div>
   </nav>
 
-  <!-- 原始結構 <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/product">Product</router-link> 一般正常的連結方式
-    <router-link :to="{ name: '新增頁面' }">Product</router-link>
-  </nav> -->
   <div class="container">
     <router-view />
   </div>
