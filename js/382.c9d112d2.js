@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvue_router"]=self["webpackChunkvue_router"]||[]).push([[382],{5216:function(u,n,r){r.r(n),r.d(n,{default:function(){return v}});var e=r(3396),t=r.p+"img/404.fd9b7a7f.png";const l=(0,e._)("h1",null,"找不到此頁面",-1),c=(0,e._)("img",{alt:"Vue logo",src:t},null,-1),o=[l,c];function a(u,n){return(0,e.wg)(),(0,e.iD)("div",null,o)}var f=r(89);const i={},s=(0,f.Z)(i,[["render",a]]);var v=s}}]);
+//# sourceMappingURL=382.c9d112d2.js.map
