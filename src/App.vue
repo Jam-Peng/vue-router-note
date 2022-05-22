@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light mb-3">
+  <nav class="navbar navbar-expand-lg bg-light mb-3 fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Navbar</a>
       <button
@@ -34,13 +34,20 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container" style="height: 300vh">
     <router-view />
   </div>
+
+  <router-link :to="{ name: '新增頁面' }" class="nav-link mb-4"
+    >Product</router-link
+  >
 </template>
 
 <style lang="scss">
 @import 'bootstrap';
+body {
+  padding-top: 7%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

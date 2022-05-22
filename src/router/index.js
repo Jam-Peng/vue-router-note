@@ -71,12 +71,34 @@ const routes = [
         ]
       }
     ]
+  },
+  // 404 頁面
+  {
+    path: '/:pathMatch(.*)*',
+    component: () => import('../views/NotFound.vue')
+  },
+  // 重新導向首頁(指定在某一個頁面如果隨意搜尋，會重新導向首頁)
+  {
+    path: '/product/:pathMatch(.*)*',
+    // redirect: '/'
+    redirect: { name: 'home' }
   }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  linkActiveClass: 'active',
+  scrollBehavior(to, from, savedPosition) {
+    // console.log(to, from, savedPosition)
+    // 在 product 頁面是滾軸到頂端
+    if (to.fullPath.match('product')) {
+      return {
+        top: 0
+      }
+    }
+    return {} // 預設情況下不執行滾動
+  }
 })
 
 export default router
