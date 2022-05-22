@@ -1,4 +1,4 @@
-#  Vue Router 練習樣板
+#  Vue Router 樣板練習
  
 ##### 匯入 Bootstrap 樣式 
 
