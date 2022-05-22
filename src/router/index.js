@@ -35,6 +35,7 @@ const routes = [
       },
       {
         path: 'DynamicRouterByProps/:id',
+        name: '路由props',
         component: () => import('../views/DynamicRouterByProps.vue'),
         props: (route) => {
           console.log('route:', route)
@@ -42,6 +43,10 @@ const routes = [
             id: route.params.id
           }
         }
+      },
+      {
+        path: 'RouteInfo',
+        component: () => import('../views/RouteInfo.vue')
       },
       {
         path: 'NamedView',

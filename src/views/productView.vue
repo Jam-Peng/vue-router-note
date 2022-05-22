@@ -32,6 +32,18 @@
         >
           作者推薦
         </router-link>
+        <router-link
+          to="/product/DynamicRouterByProps/:id"
+          class="list-group-item list-group-item-action"
+        >
+          作者推薦-RouteProps
+        </router-link>
+        <router-link
+          to="/product/RouteInfo"
+          class="list-group-item list-group-item-action"
+        >
+          路由使用方法-this.$router
+        </router-link>
       </div>
     </div>
 
