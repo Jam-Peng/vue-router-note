@@ -1,6 +1,6 @@
 #  Vue Router 樣板練習
  
-##### 匯入 Bootstrap 樣式 
+##### *匯入 Bootstrap 樣式 
 
 ##### 巢狀路由設定  
 
