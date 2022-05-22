@@ -26,6 +26,12 @@
         >
           旅遊指南
         </router-link>
+        <router-link
+          to="/product/DynamicRouter/:id"
+          class="list-group-item list-group-item-action"
+        >
+          作者推薦
+        </router-link>
       </div>
     </div>
 
