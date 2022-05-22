@@ -34,6 +34,16 @@ const routes = [
         component: () => import('../views/DynamicRouter.vue')
       },
       {
+        path: 'DynamicRouterByProps/:id',
+        component: () => import('../views/DynamicRouterByProps.vue'),
+        props: (route) => {
+          console.log('route:', route)
+          return {
+            id: route.params.id
+          }
+        }
+      },
+      {
         path: 'NamedView',
         component: () => import('../views/NamedView.vue'),
         children: [

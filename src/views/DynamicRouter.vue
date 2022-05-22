@@ -28,7 +28,7 @@ export default {
     console.log(this.$route)
     // console.log(this.$route.params.id)
     // const seed = '9325fd6d29f1935d'
-    const seed = 'this.$route.params.id'
+    const seed = this.$route.params.id
     const url = `https://randomuser.me/api/?seed=${seed}`
 
     axios
