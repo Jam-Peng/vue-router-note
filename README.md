@@ -1,24 +1,18 @@
-# vue-router
+#  Vue Router 練習樣板
+## 網址路由中不含 /dist/ 
 
-## Project setup
-```
-npm install
-```
+##### 匯入Bootstrap樣式 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+##### 巢狀路由設定  
 
-### Compiles and minifies for production
-```
-npm run build
-```
+##### 命名視圖 - 多個router-view
 
-### Lints and fixes files
-```
-npm run lint
-```
+##### 動態路由 - /:id
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+##### 動態路由 - Props 
+
+##### 路由使用方法 this.$router
+
+##### 404頁面及重新導向redirect: { name: 'home' }
+
+##### 路由設定選項
